@@ -1,4 +1,4 @@
-package chap01;
+package chap1;
 // 패키지 : 클래스를 관리하는 폴더
 
 public class ConsoleOutPut1 {	// 클래스 블락

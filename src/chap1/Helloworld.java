@@ -1,4 +1,4 @@
-package chap01;
+package chap1;
 
 public class Helloworld {	// 클래스 블락  
 
