@@ -1,10 +1,15 @@
-package chap04.ex01;
+package chap4.d01;
 
 public class If_Statement {
 
 	public static void main(String[] args) {
 		/*
-		 * 
+			클래스명 : 반드시 첫자는 영문 대문자 
+		 	변수명   : 소문자로 시작 (권장사항) , 낙타형식으로 이름을 사용 
+		 	상수명   : 대문자 로만 (권장사항) 
+		 	
+		 		특수문자 : _ , & 만 사용 가능 
+		 		숫자가 처음에 오면 오류 발생, 숫자는 사용 가능
 		 */
 		
 		/*
