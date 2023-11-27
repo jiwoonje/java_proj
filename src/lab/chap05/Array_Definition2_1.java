@@ -77,16 +77,8 @@ public class Array_Definition2_1 {
 				System.out.println("프로그램을 종료");
 				break;
 			}
-		} while (true) ;
-		
-		// 출력 1 : 방 번호를 직접 찍어서 출력
 			
-		// 출력 2 : for 문을 통해서 출력
-		
-		// 출력 3 : Enhanced For 문을 통해서 출력
-		
-		// 출력 4 : Arrays.toStrin() 이용해서 출력
-		
+		} while (true) ;
 		
 	}
 
