@@ -4,7 +4,7 @@ public class Array_Definition {
 
 	public static void main(String[] args) {
 		// 배열 변수명 : arr
-			// 배열 방의 갯수는 : 1000개 생성, 0 ~ 999, arr.length : 2000
+			// 배열 방의 갯수는 : 1000개 생성, 0 ~ 999, arr.length : 1000
 			// 배열의 각 방에 3의 배수를 저장함 (for)
 			// 배열의 각 방이 내용을 출력 (for)
 		

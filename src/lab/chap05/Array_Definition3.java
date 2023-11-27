@@ -36,9 +36,11 @@ public class Array_Definition3 {
 				i = sc.nextInt();
 				arr = new int[i];
 				
-				for ( i = 1 ; i < arr.length ; i++ ) {
+				System.out.println("입력된 배열 방의 크기는 : " + arr.length);
+				
+				for ( int a = 1 ; a < arr.length ; i++ ) {
 					if ( i % 7 == 0 || i % 8 == 0 ) {
-						System.out.println(arr[i]);
+						System.out.println(arr[a]);
 					}
 				}
 			} else if ( n == 2 ) {
