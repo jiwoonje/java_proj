@@ -92,8 +92,8 @@ public class Array_Definition3_1 {
 				for ( int i = 0 ; i < arr.length ; a++ ) {
 //					if ( a % 6 == 0 ) {continue;}
 					if ( a % 3 == 0 ) {
-						if ( a % 6 != 0 ) {					// 6의 배수는 제외
 						arr[i] = a ;
+						if ( a % 6 != 0 ) {					// 6의 배수는 제외
 						i++ ;
 						}
 					}
