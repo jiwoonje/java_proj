@@ -47,7 +47,7 @@ public class Array_Definition3_1 {
 				
 				int a = 1 ;
 				for ( int i = 0 ; i < arr.length ; a++ ) {			// 조건이 공백이면 무한 루프
-														// i = 방 번호, a = 값(7의 배수, 8의 배수), idx = 방 크기
+																	// i = 방 번호, a = 값(7의 배수, 8의 배수), idx = 방 크기
 						if ( a % 7 == 0 || a % 8 == 0 ) {
 							arr[i] = a;
 							i++ ;
