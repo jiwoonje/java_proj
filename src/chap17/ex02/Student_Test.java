@@ -42,6 +42,19 @@ public class Student_Test {
 		System.out.println("======================");
 		
 		m.nameAddr(aList);
+		aList.add(new Student("이순신", 55, 66, 77));
+		aList.add(new Student("김순신", 54, 94, 77));
+		aList.add(new Student("홍순신", 85, 94, 87));
+		
+		m.all(aList);
+		
+		System.out.println("======================");
+
+		m.sMethod(new Student("박순신", 77, 85, 44));
+		
+		
+		
+		
 		
 		
 		

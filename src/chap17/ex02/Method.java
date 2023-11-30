@@ -20,7 +20,7 @@ public class Method {
 		}
 	}
 	
-	// 인풋 : 배열, 정수.	출력 : 인풋 받은 배열에서 정수로 들어오는 ㄴ값이 몇개인지 출력
+	// 인풋 : 배열, 정수.	출력 : 인풋 받은 배열에서 정수로 들어오는 값이 몇개인지 출력
 	void arryOutput (int[] arr1 , int a) {
 		
 		int count = 0;			// 숫자의 개수를 카운트하는 변수
@@ -34,12 +34,39 @@ public class Method {
 		System.out.println("인풋 받은 정수는 : " + " 이고, 배열에 " + count + " 개 있습니다.");
 	}
 	
-	// List<Student> 객체를 받아서 각 객채의 이름 : 주소를 출력하는 메소드
+	// List<Student> 객체를 받아서 각 객체의 이름 : 주소를 출력하는 메소드
 	void nameAddr (List<Student> aList) {
 		for ( int i = 0 ; i < aList.size() ; i++ ) {
 			Student s = aList.get(i);
 			System.out.println("이름 : " + s.getName() + ", 주소 : " + s.getAddr());
 		}
 	}
+	
+	// List<Student> 객체를 받아서 메소드 호출 hapAvg()
+	void all (List<Student> aList) {
+		for ( int i = 0 ; i < aList.size() ; i++ ) {
+			Student s = aList.get(i);
+			s.hapAvg();
+			
+		}
+		
+	}
+	
+	void sMethod (Student s) {
+		s.hapAvg();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
