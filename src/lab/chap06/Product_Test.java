@@ -34,7 +34,7 @@ public class Product_Test {
 		p4.setYear(2022);
 		p4.setProColor("pink");
 		
-		// 3. 배열 arr. 방 크기 10개 : 0 ~ 9번방. 각 방에 4개의 객체 주입
+		// 3. 배열 arr 방 크기 10개 : 0 ~ 9번방. 각 방에 4개의 객체 주입
 		Product[] arr = new Product[10];
 		
 		arr[0] = p1 ;
