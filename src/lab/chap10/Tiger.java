@@ -6,11 +6,13 @@ public class Tiger extends Animal {		// Animal을 상속
 		super();
 	}
 	
-	Tiger(String tigerName) {
+	Tiger(String tigerName, int tigerAge) {
 		super("호돌이", 5);
 		this.tigerName = tigerName;
-		this.tigerAge = tigerAge;
+		this.tigerAge = super.age;
+		
 		super.water();
+		super.sleep();
 	}
 	
 	String tigerName ;
@@ -21,7 +23,7 @@ public class Tiger extends Animal {		// Animal을 상속
 	}
 	
 	void tigerinfo() {
-		System.out.println("호랑이의 이름은 " + tigerName + "이고, 나이는 " + tigerAge + "세 입니다.");
+		System.out.println("호랑이의 이름은 " + name + "이고, 나이는 " + age + "세 입니다.");
 	}
 	
 }

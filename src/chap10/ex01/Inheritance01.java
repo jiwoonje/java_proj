@@ -56,6 +56,7 @@ public class Inheritance01 {
 		w1.eat();
 		w1.sleep();
 		
+		// 자식
 		w1.workerID = 3333;
 		w1.goToWork();
 		
@@ -165,6 +166,7 @@ public class Inheritance01 {
 		// Human, Professor, Child 가짐
 		
 		Child cc01 = new Child();
+		
 		cc01.name = "김";			// Human
 		cc01.professorID = 222;		// Professor
 		cc01.childName = "손자";		// Child

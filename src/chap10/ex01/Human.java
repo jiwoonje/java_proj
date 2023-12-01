@@ -7,9 +7,6 @@ public class Human {		// 사람 : 부모 ( super class)
 		super();	// 부모 클래스
 	}
 	
-	// 필드
-	String name ;
-	int age ;
 	
 	// 생성자
 	Human (String name, int age) {
@@ -17,6 +14,9 @@ public class Human {		// 사람 : 부모 ( super class)
 		this.age = age;
 	}
 
+	// 필드
+	String name ;
+	int age ;
 		
 	//메소드
 	void eat() {
