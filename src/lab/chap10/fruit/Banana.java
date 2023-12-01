@@ -2,6 +2,7 @@ package lab.chap10.fruit;
 
 public class Banana extends Fruit{
 	
+	Banana(){}
 	Banana (String name, int cnt, int price){
 		super.name = name;
 		super.cnt = cnt;

@@ -3,7 +3,7 @@ package lab.chap10.fruit;
 public class Apple extends Fruit{
 
 	// 부모의 피드가 상속
-	
+	Apple(){}
 	Apple (String name, int cnt, int price){
 		super.name = name;
 		super.cnt = cnt;
