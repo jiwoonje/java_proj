@@ -1,25 +1,20 @@
 package com.my.movie;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Movie {
 	
-	
-	// 필드
 	private String title;
 	private String director;
 	private int grade;
 	private String genre;
 	
-	// 생성자
 	Movie(){}
-	Movie(String title, String director, int grade, String genre)
-		{this.title = title ; this.director = director ; this.grade = grade ; this.genre = genre;}
+	Movie(String title, String director, int grade, String genre){
+		this.title = title ;
+		this.director = director ;
+		this.grade = grade ;
+		this.genre = genre;
+	}
 
-	
-	
-	// 메소드
 	public String getTitle() {
 		return title;
 	}

@@ -5,12 +5,11 @@ import java.util.List;
 
 public class MovieMgr extends Movie {
 
-	private List<Movie> movies ;
-	Movie m = new Movie();
+	int index = 0 ;
 	
-	MovieMgr(){
-		this.movies = new ArrayList<>();
-	}
+	List<Movie> movies = new ArrayList<>();
+	
+	MovieMgr(){}
 
 	void add (Movie m) {
 		movies.add(m);
@@ -24,9 +23,10 @@ public class MovieMgr extends Movie {
 	}
 	
 	void search(String title) {
+		System.out.println("검색할 영화의 제목을 입력하세요.");
 		for (int i = 0 ; i < movies.size(); i++ ) {
 			if (movies.get(i).getTitle().equals(title)==true) {
-				movies.get(i);
+				System.out.println(movies.get(i));
 			}
 		}
 	}
@@ -34,23 +34,27 @@ public class MovieMgr extends Movie {
 	void searchDirector(String director) {
 		System.out.println("찾을 영화의 감독 이름을 입력하세요 >>>");
 		for (int i = 0 ; i < movies.size(); i++ ) {
-			if (m.getDirector().equals(director) || m.getDirector().contains(director)) {
-				movies.get(i);
+			if (movies.get(i).getDirector().equals(director)==true) {
+				System.out.println(movies.get(i));
 			}
 		}
 	}
 	
-	void searchGenre(String genre) {
-		System.out.println("찾을 영화의 장르를 입력하세요 >>>");
-		for (int i = 0 ; i < movies.size(); i++ ) {
-			if (m.getGenre().equals(genre) || m.getGenre().contains(genre)) {
-				movies.get(i);
+	List<Movie> searchGenre(String genre) {
+		List<Movie> a = new ArrayList<>();
+		for ( int i = 0 ; i < movies.size(); i++) {
+			if (movies.get(i).getGenre().equals(genre)) {
+				a.add(movies.get(i));
 			}
-		}
+		}return a;
 	}
 	
-	void delete(int i) {
-		movies.remove(i);
+	void delete(String title) {
+		for ( int i = 0 ; i < movies.size(); i++ ) {
+			if (movies.get(i).getTitle().equals(title)==true) {
+				movies.remove(i);
+			}
+		}
 	}
 		
 	

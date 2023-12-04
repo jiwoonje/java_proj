@@ -2,21 +2,21 @@ package com.my.movie;
 
 import java.util.Scanner;
 
-public class MovieMenu 
+public class MovieMenu extends MovieMgr
 {
 	
-	
-		Scanner sc = new Scanner(System.in);
 		MovieMgr mg = new MovieMgr();
-		Movie m = new Movie();
+		Scanner sc = new Scanner(System.in);
 		
 		String title ;
 		String director ;
-		int grade ;
+		int grade = 0;
 		String genre;
+		int select = 0;
 		
-		void MovieMenu()
-		{
+		MovieMenu(){}
+		
+		void MovieMenu() {
 	 out: 	do {
 				System.out.println("===================");
 				System.out.println("1. 영화 정보 입력");
@@ -28,37 +28,41 @@ public class MovieMenu
 				System.out.println("0. 종료");
 				System.out.println("===================");
 				System.out.println("위의 정수를 입력해 주세요>>>");
-				int a = sc.nextInt();
+				select = sc.nextInt();
 
-				switch (a) {
+				switch (select) {
 					case 1: {
+						Movie m1 = new Movie();
 						System.out.println("1. 영화 정보 입력 메뉴입니다.");
 						System.out.println("영화의 제목을 입력하세요.");
-						m.setTitle(sc.next());
+						m1.setTitle(sc.next());
 						System.out.println("감독의 이름을 입력하세요.");
-						m.setDirector(sc.next());
+						m1.setDirector(sc.next());
 						System.out.println("영화의 등급을 입력하세요.");
-						m.setGrade(sc.nextInt());
+						m1.setGrade(sc.nextInt());
 						System.out.println("영화의 장르를 입력하세요.");
-						m.setGenre(sc.next());
+						m1.setGenre(sc.next());
 						
-						mg.add(m);
-						
+						mg.add(m1);
 						break;	
 					}case 2: {
 						mg.search();
 						break;	
 					}case 3:{
+						System.out.println("검색할 영화의 제목을 입력하세요.");
 						mg.search(sc.next());
 						break;	
 					}case 4: {
+						System.out.println("검색할 감독의 이름을 입력하세요.");
 						mg.searchDirector(sc.next());
 						break;	
 					}case 5: {
-						mg.searchGenre(sc.next());
+						System.out.println("검색할 장르를 입력하세요.");
+						genre = sc.next();
 						break;	
 					}case 6: {
-						mg.delete(sc.nextInt());
+						System.out.println("검색할 영화 제목을 입력하세요.");
+						mg.delete(sc.next());
 						break;	
 					}case 7: {
 						break out;	
