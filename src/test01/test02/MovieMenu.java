@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import test01.test02.*;
 
 public class MovieMenu {
 
