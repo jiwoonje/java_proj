@@ -1,4 +1,4 @@
-package com.my.movie;
+package my_test01;
 
 public class Movie {
 	
